@@ -1,6 +1,6 @@
 import express, { Router } from 'express';
 
-import { account } from './routes/account';
+import { account } from './routes/account.js';
 import { v4 } from 'uuid';
 
 export const app = express();
