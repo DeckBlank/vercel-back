@@ -1,12 +1,7 @@
 import express, { Router } from 'express';
 
+import { account } from './routes/account';
 import { v4 } from 'uuid';
-
-const account = Router();
-
-account.get("/account", (req, res) => {
-  res.end("Account");
-});
 
 export const app = express();
 
