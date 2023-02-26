@@ -1,3 +1,4 @@
+import { account } from './routes/account';
 import express from 'express';
 import { v4 } from 'uuid';
 
@@ -19,5 +20,6 @@ app.get('/api/item/:slug', (req, res) => {
   const { slug } = req.params;
   res.end(`Item: ${slug}`);
 });
+app.use(account);
 
 export default app;
